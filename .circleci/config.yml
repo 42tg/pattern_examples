@@ -22,8 +22,7 @@ jobs:
 
     steps:
       - checkout
-          pre:
-              - cd java
+      - run: cd java
       # Download and cache dependencies
       - restore_cache:
           keys:
