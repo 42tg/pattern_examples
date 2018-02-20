@@ -22,7 +22,8 @@ jobs:
 
     steps:
       - checkout
-      - run: cd java
+      - attach_workspace:
+          at: java
       # Download and cache dependencies
       - restore_cache:
           keys:
