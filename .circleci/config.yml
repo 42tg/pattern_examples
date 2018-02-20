@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/postgres:9.4
 
-    working_directory: ~/java
+    working_directory: ~/tmp
 
     environment:
       # Customize the JVM maximum heap limit
@@ -22,7 +22,6 @@ jobs:
 
     steps:
       - checkout
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -31,6 +30,7 @@ jobs:
           - v1-dependencies-
 
       - run: mvn dependency:go-offline
+        path : java
 
       - save_cache:
           paths:
@@ -39,3 +39,4 @@ jobs:
 
       # run tests!
       - run: mvn integration-test
+        path: java
