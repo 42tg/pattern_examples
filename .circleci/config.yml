@@ -22,8 +22,8 @@ jobs:
 
     steps:
       - checkout
-      - attach_workspace:
-          at: java
+      - persist_to_workspace:
+          root: java
       # Download and cache dependencies
       - restore_cache:
           keys:
