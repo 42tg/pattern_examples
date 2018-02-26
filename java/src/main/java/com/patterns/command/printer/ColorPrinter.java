@@ -1,0 +1,15 @@
+package com.patterns.command.printer;
+public class ColorPrinter
+{
+	public void configure()
+	{
+		System.out.println("Do color configuration");
+	}
+
+	public boolean print(String document)
+	{
+		System.out.println("Colorfull :" + document);
+		return true;
+	}
+
+}
