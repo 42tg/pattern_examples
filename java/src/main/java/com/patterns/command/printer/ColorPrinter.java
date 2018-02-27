@@ -1,7 +1,7 @@
 package com.patterns.command.printer;
 public class ColorPrinter
 {
-	public void configure()
+	public void configureComplexColors()
 	{
 		System.out.println("Do color configuration");
 	}

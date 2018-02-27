@@ -11,7 +11,7 @@ public class ColorCommand implements PrintCommand{
 
 	public boolean execute(String document)
 	{
-		printer.configure();
+		printer.configureComplexColors();
 		return printer.print(document);
 	}
 }
