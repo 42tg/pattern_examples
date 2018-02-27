@@ -13,13 +13,16 @@ public class App
     {
     	ColorPrinter color = new ColorPrinter();
     	MonoPrinter mono = new MonoPrinter();
+
     	Secretary bob = new Secretary();
+
     	String world = "Hello World!";
+
     	bob.executePrint(world);
     	bob.setPrinter(new ColorCommand(color));
     	bob.executePrint(world);
     	bob.setPrinter(new MonoCommand(mono));
     	bob.executePrint(world);
-        System.out.println( world );
+
     }
 }
