@@ -12,6 +12,7 @@ public class Secretary
 
 	public boolean executePrint(String document)
 	{
+		System.out.println("Secretary prints");
 		return this.printer.execute(document);
 	}
 }
