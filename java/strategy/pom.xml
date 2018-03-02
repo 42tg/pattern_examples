@@ -7,10 +7,10 @@
      <version>1.0</version>
   </parent>
 
-  <artifactId>test</artifactId>
+  <artifactId>strategy</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>Test Example</name>
+  <name>Strategy Pattern Example</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>
