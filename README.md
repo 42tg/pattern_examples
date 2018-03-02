@@ -3,5 +3,5 @@
 
 Personal implementation from the typical behavioural pattern, this project exists ony through an self declared educational idea.
 
-Main Goals are to improve the knowledge of the typical patterns, basic implementation in different languages, work and organize yourself with git and finally test and deploy different languages on an automated way.
+Main Goals are to improve the knowledge of the typical patterns, basic implementation in different languages (java first), work and organize yourself with git and finally test and deploy different languages on an automated way.
 
