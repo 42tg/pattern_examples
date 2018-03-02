@@ -24,5 +24,8 @@ public class App
     	bob.setPrinter(new MonoCommand(mono));
     	bob.executePrint(world);
 
+        Manager freddy = new Manager();
+
+        freddy.executePrint(world);
     }
 }
