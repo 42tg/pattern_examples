@@ -12,12 +12,14 @@ public class App
     	Tamagotchi pete = new Tamagotchi();
 
 
-    	while(true)
+    	boolean exitLoop = false;
+    	while(!exitLoop)
     	{
     		System.out.println("What do you want to do?");
     		System.out.println("1: Play");
     		System.out.println("2: Feed");
     		System.out.println("3: Cure");
+    		System.out.println("0: Exit game");
     		String input = System.console().readLine();
     		switch(input){
     			case "1":
@@ -29,6 +31,8 @@ public class App
     			case "3":
     				pete.cure();
     			break;
+    			case "0":
+    				exitLoop = true;
     			default:
     			break;
     		}
